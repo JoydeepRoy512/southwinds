@@ -748,3 +748,47 @@ a.p-btn {
     }
 }
 // modal
+
+
+// responsive
+@media only screen and (max-width:426px) {
+    .navtop{
+        display: none;
+    }
+    .navbar{
+        background: var(--primary-color) !important; 
+    }
+    .banner{
+        height: auto !important;
+        .banner-outer{
+            height: auto !important;
+        }
+        h1{
+            font-size: 2.4rem !important;
+        }
+        p{
+            text-align: justify;
+        }
+        .banner-right{
+            height: 70vh !important;
+        }
+        .banner-left{
+            width: 85% !important;
+            margin: 0 auto;
+        }
+        .banner-left-inner{
+            position: relative !important;
+            a{
+                font-size: 0.5rem;
+                padding: 0.5rem 1rem !important;
+            }
+        }
+        .banner-right-inner{
+            position: relative !important;
+            width: 80% !important;
+            top: 25% !important;
+            margin: 0 auto;
+        }
+    }
+}
+// responsive
