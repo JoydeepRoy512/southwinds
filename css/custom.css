@@ -17,7 +17,7 @@
   --primary-color: #bc986b;
 }
 .padtop {
-  padding-top: 60px;
+  padding-top: 100px;
 }
 p {
   font-size: 16px;
@@ -126,6 +126,15 @@ p {
 .primary-bg {
   background: #bc986b !important;
 }
+a.p-btn {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  background: var(--primary-color);
+  padding: 0.7rem 1rem;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
 .banner {
   width: 100%;
   height: 100vh;
@@ -139,7 +148,7 @@ p {
   height: 100vh;
   position: relative;
 }
-.banner .banner-outer .col-md-8 {
+.banner .banner-outer .col-md-6 {
   position: relative;
 }
 .banner .banner-outer .banner-left {
@@ -151,12 +160,13 @@ p {
   z-index: 3;
   /* left: 50%; */
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 .banner .banner-outer .banner-left .banner-left-inner h1 {
   color: #fff;
-  font-size: 5rem;
+  font-size: 4rem;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .banner .banner-outer .banner-left .banner-left-inner h1 span {
   color: var(--primary-color);
@@ -174,10 +184,82 @@ p {
   background: var(--primary-color);
   padding: 1rem 1.5rem;
   font-weight: bold;
+  margin-right: 1.5rem;
 }
 .banner .banner-outer .banner-right {
   width: 100%;
   height: 100vh;
+}
+.banner .banner-outer .banner-right .banner-right-inner {
+  position: absolute;
+  z-index: 3;
+  /* left: 50%; */
+  right: 0% !important;
+  top: 57%;
+  width: 60%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.banner .banner-outer .banner-right .banner-right-inner form {
+  padding: 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0000008d), to(#0000003d));
+  background: linear-gradient(180deg, #0000008d, #0000003d);
+}
+.banner .banner-outer .banner-right .banner-right-inner form .callback-btn {
+  width: 100%;
+  margin: 0 auto !important;
+}
+.banner .banner-outer .banner-right .banner-right-inner form .form-group {
+  width: 100% !important;
+  margin-bottom: 0.5rem;
+}
+.banner .banner-outer .banner-right .banner-right-inner form .form-group input,
+.banner .banner-outer .banner-right .banner-right-inner form .form-group textarea {
+  color: #fff;
+}
+.banner .banner-outer .banner-right .banner-right-inner form .form-group .form-control {
+  width: 100% !important;
+  background: transparent !important;
+  border: none;
+  border-radius: 0px !important;
+  border-bottom: 1px solid #fff;
+  caret-color: var(--primary-color);
+  outline: none;
+}
+.banner .banner-outer .banner-right .banner-right-inner form .form-group .form-control::-webkit-input-placeholder {
+  color: #fff !important;
+}
+.banner .banner-outer .banner-right .banner-right-inner form .form-group .form-control::-moz-placeholder {
+  color: #fff !important;
+}
+.banner .banner-outer .banner-right .banner-right-inner form .form-group .form-control:-ms-input-placeholder {
+  color: #fff !important;
+}
+.banner .banner-outer .banner-right .banner-right-inner form .form-group .form-control::-ms-input-placeholder {
+  color: #fff !important;
+}
+.banner .banner-outer .banner-right .banner-right-inner form .form-group .form-control::placeholder {
+  color: #fff !important;
+}
+.banner .banner-outer .banner-right .banner-right-inner form .form-group .form-control option {
+  color: #000 !important;
+}
+.banner .banner-outer .banner-right .banner-right-inner form .form-group .form-control:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 1px solid var(--primary-color);
+}
+.banner .banner-outer .banner-right .banner-right-inner form .form-group button {
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
 }
 .about {
   width: 100%;
@@ -185,6 +267,7 @@ p {
 .about h2 {
   font-size: 2rem;
   color: var(--primary-color);
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .about .about-left img {
   padding: 0.5rem 0;
@@ -205,6 +288,7 @@ p {
 }
 .about .about-right .about-right-heading h3 {
   font-size: 3rem;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .about .about-right .about-right-para {
   width: 100%;
@@ -232,7 +316,7 @@ p {
   background: var(--primary-color);
 }
 .about .about-right .about-carousel {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 .yt-video {
   width: 100%;
@@ -248,10 +332,12 @@ p {
   font-size: 2rem;
   color: var(--primary-color);
   text-transform: uppercase;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .amenities h3 {
   color: #000;
   font-size: 3rem;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .amenities .amenities-carousel .item {
   padding: 2rem;
@@ -294,9 +380,11 @@ p {
   font-size: 2rem;
   color: var(--primary-color);
   text-transform: uppercase;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .gallery h3 {
   font-size: 3rem;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .gallery .gallery-1,
 .gallery .gallery-2,
@@ -340,17 +428,21 @@ p {
   color: var(--primary-color);
   text-transform: uppercase;
   font-size: 2rem;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .floor-plan h3 {
   font-size: 3rem;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .feedback h2 {
   font-size: 2rem;
   color: var(--primary-color);
   text-transform: uppercase;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .feedback h3 {
   font-size: 3rem;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .feedback .feedback-carousel .item {
   padding: 2rem;
@@ -395,6 +487,7 @@ p {
   font-size: 2rem;
   color: var(--primary-color);
   text-transform: uppercase;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .location iframe {
   width: 100%;
@@ -445,6 +538,7 @@ p {
 .footer .quick-links .quick-links-head h4 {
   color: #fff;
   font-size: 2rem;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .footer .quick-links .quick-links-head .line {
   display: block;
@@ -465,6 +559,7 @@ p {
 .footer .footer-about h4 {
   color: #fff;
   font-size: 2rem;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .footer .footer-about .line {
   display: block;
@@ -490,4 +585,30 @@ p {
   color: #fff;
   padding: 1.5rem 0;
   border-top: 1px solid var(--primary-color);
+}
+.modal {
+  z-index: 9999999;
+}
+.modal .modal-body label {
+  display: none;
+}
+.modal .modal-body input,
+.modal .modal-body textarea {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.modal .modal-body input:focus,
+.modal .modal-body textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.modal .modal-body button {
+  background: var(--primary-color);
+  border: none;
+  font-weight: bold;
+}
+.modal .modal-body button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }

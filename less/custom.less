@@ -20,7 +20,7 @@
 }
 
 .padtop {
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 p {
@@ -150,6 +150,17 @@ p {
 
 // navbar
 
+a.p-btn {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    background: var(--primary-color);
+    padding: 0.7rem 1rem;
+    margin-right: 1.5rem;
+    font-weight: bold;
+}
+
+
 // banner
 .banner {
     width: 100%;
@@ -167,7 +178,7 @@ p {
         height: 100vh;
         position: relative;
 
-        .col-md-8 {
+        .col-md-6 {
             position: relative;
         }
 
@@ -180,12 +191,13 @@ p {
                 z-index: 3;
                 /* left: 50%; */
                 top: 50%;
-                -webkit-transform: translate(-50%, -50%);
+                // -webkit-transform: translate(-50%, -50%);
                 transform: translate(0, -50%);
 
                 h1 {
                     color: #fff;
-                    font-size: 5rem;
+                    font-size: 4rem;
+                    font-family: 'Frank Ruhl Libre', serif;
 
                     span {
                         color: var(--primary-color);
@@ -206,6 +218,7 @@ p {
                     background: var(--primary-color);
                     padding: 1rem 1.5rem;
                     font-weight: bold;
+                    margin-right: 1.5rem;
                 }
             }
         }
@@ -213,6 +226,67 @@ p {
         .banner-right {
             width: 100%;
             height: 100vh;
+
+            .banner-right-inner {
+                position: absolute;
+                z-index: 3;
+                /* left: 50%; */
+                right: 0% !important;
+                top: 57%;
+                width: 60%;
+                // -webkit-transform: translate(-50%, -50%);
+                transform: translate(0, -50%);
+
+                form {
+                    padding: 1.5rem;
+                    border: 2px solid #fff;
+                    border-radius: 6px;
+                    background: linear-gradient(180deg, #0000008d, #0000003d);
+                    .callback-btn{
+                        width: 100%;
+                        margin: 0 auto !important;
+                        
+                    }
+                    .form-group {
+                        width: 100% !important;
+                        margin-bottom: 0.5rem;
+                        input, textarea{
+                            color: #fff;
+                        }
+
+                        .form-control {
+                            width: 100% !important;
+                            background: transparent !important;
+                            border: none;
+                            border-radius: 0px !important;
+                            border-bottom: 1px solid #fff;
+                            caret-color: var(--primary-color);
+                            outline: none;
+                            &::placeholder{
+                                color: #fff !important;
+                            }
+                            option{
+                                color: #000 !important;
+                            }
+                            &:focus {
+                                border: none;
+                                box-shadow: none;
+                                border-bottom: 1px solid var(--primary-color);
+                            }
+                        }   
+                        
+                        button{
+                            padding: 0.5rem 1rem;
+                            background: var(--primary-color);
+                            border: none;
+                            color: #fff;
+                            font-weight: bold;
+                            display: inline-block;
+                        margin-top: 1rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -227,6 +301,7 @@ p {
     h2 {
         font-size: 2rem;
         color: var(--primary-color);
+        font-family: 'Frank Ruhl Libre', serif;
     }
 
     .about-left {
@@ -253,6 +328,7 @@ p {
         .about-right-heading {
             h3 {
                 font-size: 3rem;
+                font-family: 'Frank Ruhl Libre', serif;
             }
         }
 
@@ -287,7 +363,7 @@ p {
         }
 
         .about-carousel {
-            margin: 3rem 0;
+            margin: 2rem 0;
         }
     }
 }
@@ -314,11 +390,13 @@ p {
         font-size: 2rem;
         color: var(--primary-color);
         text-transform: uppercase;
+        font-family: 'Frank Ruhl Libre', serif;
     }
 
     h3 {
         color: #000;
         font-size: 3rem;
+        font-family: 'Frank Ruhl Libre', serif;
     }
 
     .amenities-carousel {
@@ -385,10 +463,12 @@ p {
         font-size: 2rem;
         color: var(--primary-color);
         text-transform: uppercase;
+        font-family: 'Frank Ruhl Libre', serif;
     }
 
     h3 {
         font-size: 3rem;
+        font-family: 'Frank Ruhl Libre', serif;
     }
 
     .gallery-1,
@@ -398,6 +478,7 @@ p {
     .gallery-5 {
         // a{
         position: relative;
+
         .content {
             transition: all 300ms ease-in-out;
             padding: 2rem;
@@ -435,58 +516,70 @@ p {
         color: var(--primary-color);
         text-transform: uppercase;
         font-size: 2rem;
+        font-family: 'Frank Ruhl Libre', serif;
     }
 
     h3 {
         font-size: 3rem;
+        font-family: 'Frank Ruhl Libre', serif;
     }
 }
 
 // floor plan
 
 // feedback
-.feedback{
-    h2{
+.feedback {
+    h2 {
         font-size: 2rem;
         color: var(--primary-color);
         text-transform: uppercase;
+        font-family: 'Frank Ruhl Libre', serif;
     }
-    h3{
+
+    h3 {
         font-size: 3rem;
+        font-family: 'Frank Ruhl Libre', serif;
     }
-    .feedback-carousel{
-        .item{
+
+    .feedback-carousel {
+        .item {
             padding: 2rem;
-            .head{
+
+            .head {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                .profile-pic{
-                    img{
+
+                .profile-pic {
+                    img {
                         border-radius: 50%;
                         object-fit: cover;
                     }
                 }
-                .name{
-                    h4{
+
+                .name {
+                    h4 {
                         font-size: 1.5rem;
                     }
-                    p{
+
+                    p {
                         font-size: 1rem;
                         color: var(--primary-color);
                         font-size: 1.2rem;
                     }
                 }
-                .quote{
-                    i{
+
+                .quote {
+                    i {
                         font-size: 3.5rem;
                         color: var(--primary-color);
                         opacity: 0.4;
                     }
                 }
             }
-            .text{
-                p{
+
+            .text {
+                p {
                     margin: 2rem 0;
                     text-align: justify;
                 }
@@ -494,41 +587,49 @@ p {
         }
     }
 }
+
 // feedback
 
 // location
-.location{
+.location {
     width: 100%;
-    h2{
+
+    h2 {
         font-size: 2rem;
         color: var(--primary-color);
         text-transform: uppercase;
+        font-family: 'Frank Ruhl Libre', serif;
     }
-    iframe{
+
+    iframe {
         width: 100%;
         height: 600px;
     }
 }
+
 // location
 
 // footer
-.footer{
+.footer {
     width: 100%;
     height: auto;
     background: #2b2d42;
-    .footer-left{
-        .contact{
+
+    .footer-left {
+        .contact {
             display: flex;
             justify-items: flex-start;
             align-items: center;
             margin: 2rem 0;
-            .contact-left{
+
+            .contact-left {
                 position: relative;
                 background-color: var(--primary-color);
                 height: 3rem;
                 width: 3rem;
+
                 // border-radius: 50%;
-                i{
+                i {
                     position: relative;
                     left: 0.6rem;
                     top: 0.5rem;
@@ -536,15 +637,19 @@ p {
                     color: #fff;
                 }
             }
-            .contact-right{
+
+            .contact-right {
                 margin-left: 1.5rem;
-                p{
+
+                p {
                     padding: 0px;
                     margin: 0px;
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: #fff;
-                        &:hover{
+
+                        &:hover {
                             color: var(--primary-color);
                         }
                     }
@@ -553,49 +658,59 @@ p {
         }
     }
 
-    .quick-links{
-        .quick-links-head{
-            h4{
+    .quick-links {
+        .quick-links-head {
+            h4 {
                 color: #fff;
                 font-size: 2rem;
+                font-family: 'Frank Ruhl Libre', serif;
             }
-            .line{
+
+            .line {
                 display: block;
                 width: 4rem;
                 height: 0.1rem;
                 background-color: var(--primary-color);
             }
         }
-        .quick-links-body{
+
+        .quick-links-body {
             padding: 1.2rem 0;
-            p{
-                a{
+
+            p {
+                a {
                     text-decoration: none;
                     color: #fff;
-                    &:hover{
+
+                    &:hover {
                         color: var(--primary-color);
                     }
                 }
             }
         }
     }
-    .footer-about{
-        h4{
+
+    .footer-about {
+        h4 {
             color: #fff;
             font-size: 2rem;
+            font-family: 'Frank Ruhl Libre', serif;
         }
-        .line{
+
+        .line {
             display: block;
             width: 4rem;
             height: 0.1rem;
             background-color: var(--primary-color);
         }
-        p{
+
+        p {
             color: #fff;
             padding: 1rem 0;
         }
     }
-    .copyright{
+
+    .copyright {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -606,3 +721,30 @@ p {
     }
 }
 // footer
+
+// modal
+.modal{
+    z-index: 9999999;
+    .modal-body{
+        label{
+            display: none;
+        }
+        input, textarea{
+            border: none;
+            border-radius: 0px;
+            border-bottom: 1px solid var(--primary-color);
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        button{
+            background: var(--primary-color);
+            border: none;
+            font-weight: bold;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+}
+// modal
